@@ -1,0 +1,40 @@
+{
+  "name": "speccy",
+  "version": "0.0.1",
+  "private": false,
+  "main": "./index.js",
+  "description": "simple specification pattern for JavaScript object validation",
+  "keywords": [
+    "specification",
+    "pattern",
+    "validation",
+    "satisfied",
+    "satisfies",
+    "issatisfiedby",
+    "and",
+    "or",
+    "not"
+  ],
+  "homspeccyge": "https://github.com/derickbailey/speccy",
+  "bugs": {
+    "url": "http://github.com/derickbailey/speccy/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Derick Bailey",
+    "url": "http://derickbailey.com",
+    "email": "derickbailey@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/derickbailey/speccy.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jasmine-node": "^0.2.1"
+  }
+}
