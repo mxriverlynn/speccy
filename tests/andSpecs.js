@@ -6,11 +6,6 @@ describe("and specs", function(){
   var hasBar = new HasValue("bar");
   var hasBaz = new HasValue("baz");
 
-  console.log("--------------------------");
-  console.log(hasFoo.and(hasBar).and);
-  console.log("--------------------------");
-
-  debugger;
   var hasFooBarBaz = hasFoo
     .and(hasBar)
     .and(hasBaz);
