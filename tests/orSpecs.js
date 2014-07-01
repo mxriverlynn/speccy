@@ -1,5 +1,5 @@
-var Specfication = require("../speccy");
-var HasValue = require("./helpers/hasValue");
+var Specfication = require("../index");
+var HasValue = require("./helpers/has-value");
 
 describe("or specs", function(){
   var hasFoo = new HasValue("foo");

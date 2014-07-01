@@ -1,11 +1,19 @@
-var Specfication = require("../speccy");
-var HasValue = require("./helpers/hasValue");
+var Specfication = require("../index");
+var HasValue = require("./helpers/has-value");
 
 describe("and specs", function(){
   var hasFoo = new HasValue("foo");
   var hasBar = new HasValue("bar");
   var hasBaz = new HasValue("baz");
-  var hasFooBarBaz = hasFoo.and(hasBar).and(hasBaz);
+
+  console.log("--------------------------");
+  console.log(hasFoo.and(hasBar).and);
+  console.log("--------------------------");
+
+  debugger;
+  var hasFooBarBaz = hasFoo
+    .and(hasBar)
+    .and(hasBaz);
 
   describe("when specification is met", function(){
     var result;

@@ -3,8 +3,10 @@ module.exports = function(grunt){
   grunt.initConfig({
     jasmine_node: {
       options: {
-        extensions: 'js',
-        specNameMatcher: 'Spec',
+        match: ".",
+        matchall: false,
+        extensions: "js",
+        specNameMatcher: "Specs",
         jUnit: {
           report: true,
           savePath : "./build/reports/jasmine/",
@@ -12,7 +14,7 @@ module.exports = function(grunt){
           consolidate: true
         }
       },
-      all: ['tests/']
+      build: ["tests/**/*.js"]
     },
 
     connect: {
@@ -27,7 +29,8 @@ module.exports = function(grunt){
       options: {
         jshintrc: ".jshintrc"
       },
-      build: ["speccy/**/*.js"]
+      build: ["speccy/**/*.js"],
+      tests: ["tests/**/*.js"]
     }
   });
 
