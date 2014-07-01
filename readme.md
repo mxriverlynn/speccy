@@ -27,10 +27,16 @@ var hasFoo = new HasValue("foo");
 var hasBar = new HasValue("Bar");
 var hasBaz = new HasValue("Baz");
 
-var mySpec = hasFoo.and(hasBar).or(
-  hasBaz.not(hasBar)
+// build a compound spec using and/or/not
+var mySpec = hasFoo.and(
+  (
+    hasBar.not(hasBaz)
+  ).or(
+    hasBaz.not(hasBar)
+  )
 );
 
+// run the specs
 console.log(mySpec.isSatisfiedBy({
   foo: "something",
   bar: "another thing"
@@ -47,6 +53,8 @@ console.log(mySpec.isSatisfiedBy({
   baz: "third thing"
 })); //=> false
 ```
+
+For more examples, see the tests in the `tests` folder.
 
 ## Legal Junk
 
