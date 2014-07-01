@@ -1,10 +1,8 @@
 .DS_Store
+/build
 /deploy
 /queries
 /tmp
-database/db_backups/development
-database/db_backups/staging
-database/db_backups/production
 node_modules
 *.swp
 *.swo
@@ -12,6 +10,5 @@ node_modules
 *.orig
 *.suo
 *.user
-estimator.services/packages
 bin
 obj
